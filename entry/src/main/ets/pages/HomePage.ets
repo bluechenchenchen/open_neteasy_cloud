@@ -12,7 +12,7 @@ struct HomePage {
 
   aboutToAppear() {
     if (router.getParams()) {
-      this.titleParam = router.getParams()[CommonConstants.KEY_PARAM_DATA] as Resource;
+      // this.titleParam = router.getParams()[CommonConstants.KEY_PARAM_DATA] as Resource;
     }
   }
 

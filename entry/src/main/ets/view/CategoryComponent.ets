@@ -41,7 +41,7 @@ export struct CategoryComponent {
               });
             })
           }
-        }, (listItemData, index) => index + JSON.stringify(listItemData));
+        }, (listItemData: ListItemData, index) => index + JSON.stringify(listItemData));
       }
       .divider({
         strokeWidth: $r('app.float.divider_height'),

@@ -12,7 +12,8 @@ struct DailyRecommendPage {
 
   aboutToAppear() {
     if (router.getParams()) {
-      this.titleParam = router.getParams()[CommonConstants.KEY_PARAM_DATA] as Resource;
+      console.log('===>',JSON.stringify(router.getParams()))
+      // this.titleParam = router.getParams()[CommonConstants.KEY_PARAM_DATA] as Resource;
     }
   }
 
@@ -21,8 +22,8 @@ struct DailyRecommendPage {
       Image($r('app.media.logo'))
         .width('62')
         .height('62')
-        .borderRadius('32')
-        .margin({top:134})
+        // .borderRadius('32')
+        .margin({top:180})
       Column(){
         Button('手机号登录')
           .width(282)

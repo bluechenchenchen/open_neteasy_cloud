@@ -15,7 +15,7 @@ struct IndexPage {
 
   aboutToAppear() {
     if (router.getParams()) {
-      this.titleParam = router.getParams()[CommonConstants.KEY_PARAM_DATA] as Resource;
+      // this.titleParam = router.getParams()[CommonConstants.KEY_PARAM_DATA] as Resource;
     }
   }
 
@@ -26,7 +26,7 @@ struct IndexPage {
       .fontWeight(this.currentIndex===index?800:400)
   }
 
-  @Builder TabMyContent(){
+  @Builder TabMyContent() {
     Scroll(){
       Column(){
         Flex({ direction: FlexDirection.Row,justifyContent:FlexAlign.SpaceAround,alignItems:ItemAlign.Center }){
